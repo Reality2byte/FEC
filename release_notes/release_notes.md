@@ -1,3 +1,43 @@
+# June 09, 2026 (Sprint 31.i)
+## Added
+- **CMS and API:** Added download task tracking so repeat requests check the same download instead of starting a duplicate one. 
+- **API:** Added support for C-1 / Loan Agreement and Loan Forgiveness filing document types.
+- **API:** Added a slower search reindex option for large legal document sets so updates can run with less disruption. 
+
+## Changed
+- **API:** Updated filing document descriptions for Debt Settlement Plan and Miscellaneous Submission to FEC.
+- **API:** Updated large downloads so they have time limits and do not run indefinitely.
+- **API:** Updated filing data descriptions so the API and database stay consistent.
+
+## Under the hood
+- **API:** Updated Flask, ujson, urllib3, GitPython, and Flyway package to remediate snyk vulnerability 
+- **API:** Update expand_document postgres function to include document types W, V and modify the text for document types A and T
+- **CMS:** Updated Django, urllib3, GitPython
+
+# May 19, 2026 (Sprint 31.6)
+## Added
+- **CMS:** Added a banner listing for editors that shows active and inactive dates without opening each banner. 
+- **API:** Added test coverage for loading rulemaking documents into search.
+
+## Changed
+- **CMS:** Updated homepage and alert banner previews so editors see only the banner they are editing. 
+- **CMS:** Updated banner previews to better match the current homepage.
+- **CMS:** Fixed alert banners so extra punctuation and arrows no longer appear when there is no description or link.
+- **CMS:** Updated data tables to show details in expandable rows instead of a side panel.
+- **CMS:** Fixed data table pagination controls so they display and align correctly.
+- **CMS:** Fixed data table dropdown styling after a row is expanded
+- **CMS:** Only show the option to open an image when a PDF image is available.
+- **CMS:** Fixed committee profile pages so they no longer show a 404 error when a cycle has no history record.
+- **API:** Updated schedule A sorting so records with missing values appear after records with dates.
+- **API:** Updated penalty information for affected MUR cases and refreshed search so the corrected data is available.
+
+## Under the hood
+- **CMS:** Removed unused XML package
+- **CMS:** Updated GitPython
+- **CMS:** Increased application worker and connection capacity
+- **API:** Increased application timeout to reduce failed long-running requests.
+- **API:** Add test coverage for rulemaking load
+
 # May 5, 2026 (Sprint 31.5)
 ## Added
 - **API:** Added a new `other` state filter to help find records with foreign, missing, or nonstandard state values.
@@ -7,7 +47,6 @@
 - **CMS:** On committee profile pages, in the 24–48 hour filings notices section, display only 24–48 hour report types.
 - **CMS:** Updated data tables to show details in expandable rows instead of a side panel.
 - **CMS:** Fixed committee profile pages so they no longer show a 404 error when the committee exists but a selected cycle has no history record.
-
 
 ## Under the hood
 - **API:** Fixed backup task failures by using a unique base path for each repo.
