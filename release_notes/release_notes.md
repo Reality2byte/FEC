@@ -1,3 +1,25 @@
+# June 23, 2026 (Sprint 32.1)
+## Added
+- **CMS:** Added double-arrow icons. 
+- **API:** Added support for more filing document types in filing descriptions.
+
+## Changed
+- **API:** Updated House and Senate committee totals so committees with mixed form types in the same cycle show one combined total.
+- **API:** Updated the filing document type description for type `T` to “Miscellaneous Submission to FEC”. 
+- **API and CMS:** Updated download status checks so repeated checks use the existing download task instead of starting a duplicate download.
+
+## Under the hood
+- **API and CMS:** Upgraded Node to lts v24.16.0
+- **CMS:** Updated code for several components to address deprecations including dropdowns, date filters, calendar menus, maps, search forms, skip links, and audit report filters, so they continue to work as expected.
+- **CMS:** Updated Gulp and Babel build tools. 
+- **CMS:** Improved build reliability and performance after Node upgrade.
+- **API and CMS:** Upgraded several packages to address security findings including:
+  - Django v5.2.14
+  - GitPython v3.1.50
+  - urllib3 v2.7.0
+  - ujson v5.12.1
+  - Flyway v12.9.0
+
 # June 09, 2026 (Sprint 31.i)
 ## Added
 - **CMS and API:** Added download task tracking so repeat requests check the same download instead of starting a duplicate one. 
