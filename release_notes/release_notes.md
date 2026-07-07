@@ -1,3 +1,27 @@
+# July 7, 2026 (Sprint 32.2)
+## Added
+- **CMS:** Added a reorganized bulk data download page with grouped download sections. This includes Postgres database dump file links.
+
+## Changed
+- **CMS:** Restored sort icons on data tables so users can know which columns can be sorted. 
+- **CMS:** Updated selected committee receipt and individual contribution searches so records with missing dates appear after records with dates. 
+- **CMS:** Updated rulemaking search table so that the first document appears when no key document is set. 
+- **CMS:** Fixed individual rulemaking page server error on some rulemaking pages.
+- **CMS:** Improved individual rulemaking pages to make them more accessible.
+- **CMS:** Updated House and Senate committee totals so committees with mixed form types
+- **API:** Improved API responses for searches with no results so they return faster and use fewer database resources.
+
+## Under the hood
+- **CMS:** Updated Wagtail and strengthened checks that prevent duplicate unique CMS pages. 
+- **CMS:** Removed outdated feature flags for features that are already live on the website. 
+- **CMS:** Improved build readability after the Node 24 upgrade.
+- **CMS:** Improve API caller retry and timeout handling by configuring retries.
+- **API:** Added database column for derived committee type to support future API work.
+- **API:** Add check_result_list function.
+- **API:** Updated application server settings so the team can tune worker timeout behavior more easily.
+- **API:** Updated flyway to version 12.9.0
+- **API, CMS and Proxy:** Updated the Cloud Foundry package source used for deployments.
+
 # June 23, 2026 (Sprint 32.1)
 ## Added
 - **CMS:** Added double-arrow icons. 
