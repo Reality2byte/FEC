@@ -8,7 +8,7 @@
 - **CMS:** Updated rulemaking search table so that the first document appears when no key document is set. 
 - **CMS:** Fixed individual rulemaking page server error on some rulemaking pages.
 - **CMS:** Improved individual rulemaking pages to make them more accessible.
-- **CMS:** Updated House and Senate committee totals so committees with mixed form types
+- **API:** Updated House and Senate committee totals so committees with mixed form types within the same cycle have aggregated totals that include all form types. 
 - **API:** Improved API responses for searches with no results so they return faster and use fewer database resources.
 
 ## Under the hood
