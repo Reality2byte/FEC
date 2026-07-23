@@ -1,3 +1,14 @@
+# July 21, 2026 (Sprint 32.3)
+
+## Changed
+- **API:** Updated long running API requests so timed out database searches return a 504 timeout response. 
+
+## Under the hood
+- **CMS:** Improved CMS API caller request logs so routine messages are informational in the logs.
+- **CMS:** Added capability for proxy to rate limit by IP and route.
+- **API:** Fix multiple level_1 rows in rm document_vw when upload to Opensearch
+- **API:** Updated Flyway to version 12.11.0
+
 # July 7, 2026 (Sprint 32.2)
 ## Added
 - **CMS:** Added a reorganized bulk data download page with grouped download sections. This includes Postgres database dump file links.
