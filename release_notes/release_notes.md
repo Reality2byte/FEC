@@ -1,3 +1,26 @@
+## Added
+- **H4CC:** Added an NRSC v. FEC information notice on key web pages that reference coordinated party expenditure limits.
+     - [Coordinated party expenditures](https://www.fec.gov/help-candidates-and-committees/making-disbursements-political-party/coordinated-party-expenditures/)
+     - [How to report Coordinated party expenditures](https://www.fec.gov/help-candidates-and-committees/filing-political-party-reports/coordinated-expenditures/)
+     - [Coordinated party expenditure limits](https://www.fec.gov/help-candidates-and-committees/making-disbursements-political-party/coordinated-party-expenditures/coordinated-party-expenditure-limits/)
+     - [Coordinated party expenditure limits adjusted for 2026](https://www.fec.gov/updates/coordinated-party-expenditure-limits-adjusted-for-2026/)
+     - [Advertising and disclaimers](https://www.fec.gov/help-candidates-and-committees/advertising-and-disclaimers/)
+     - [Party committee coordinated party expenditure disclaimer example](https://www.fec.gov/help-candidates-and-committees/making-disbursements-political-party/party-coordinated-party-expenditure-example/)
+     - [Calculating the coordinated party expenditure limits](https://www.fec.gov/help-candidates-and-committees/making-disbursements-political-party/coordinated-party-expenditures/calculating-coordinated-party-expenditure-limits/)
+- **H4CC:** Added an NRSC v. FEC information notice to two Help for candidates and committees guide tabs. 
+- **CMS:** Added more state related filter options to several datatables and election search pages, including territories such as Armed Forces, and “Foreign countries and other”, so users can find records with missing state values.
+- **API:** Added `derived_committee_type` to the `/efile/form1/` API response and updated the API documentation for committee type fields.
+ 
+## Changed
+- **CMS:** Fixed the FECfile+ eligibility tool so users on shorter screens can scroll to and use all buttons.
+- **CMS:** Updated the FEC offices organization chart so the layout displays more cleanly.
+- **API:** Updated legal citation suggestions so regulatory and statutory citations appear in ascending number order. 
+
+## Under the hood
+- **CMS:** Updated search engine guidance to reduce indexing of search heavy data and legal search pages.
+- **API:** Updated Flyway to version 13. 
+- **API:** Fix flyway gradle compatibility issue.
+
 # July 21, 2026 (Sprint 32.3)
 
 ## Changed
