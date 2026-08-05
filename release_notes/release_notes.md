@@ -1,3 +1,5 @@
+# August 4, 2026 (Sprint 32.4)
+
 ## Added
 - **H4CC:** Added an NRSC v. FEC information notice on key web pages that reference coordinated party expenditure limits.
      - [Coordinated party expenditures](https://www.fec.gov/help-candidates-and-committees/making-disbursements-political-party/coordinated-party-expenditures/)
