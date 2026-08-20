@@ -1,3 +1,16 @@
+# August 18, 2026 (Sprint 32.5)
+## Added
+- **CMS and API:** Added a 500 character limit to legal keyword searches and a clear message when search terms are too long. This applies to legal search inputs only. 
+ 
+## Changed
+- **CMS:** Removed the glossary term “Coordinated Party Expenditure” while related website content is being updated. 
+- **CMS:** Fixed broken Federal Register notice links on Explanation and Justification (E&J) pages so users can open source documents. 
+
+## Under the hood
+- **Proxy:** Added blocking for certain query strings on legal search routes.
+- **API:** Updated `GitPython` from version 3.1.50 to 3.1.57.
+- **API:** Updated `ujson` from version 5.12.1 to 5.13.0.
+
 # August 4, 2026 (Sprint 32.4)
 
 ## Added
