@@ -1,3 +1,22 @@
+# September 01, 2026 (Sprint 32.6)
+ ## Changed
+- **H4CC:** Removed glossary term “Coordinated Party Expenditure” from the glossary 
+- **H4CC:** Updated hyperlinks in the Press Pages 
+- **H4CC:** Updated outdated information on the Press Pages 
+- **CMS:** Updated the hearings page text to point users to the Rulemaking search and to show hearings from 2000 through the present. 
+- **CMS:** Improved committee profile page load performance by deferring About and Filings tab data until it’s requested.
+- **CMS:** Fixed advisory opinion pages and search results so records with no issue date continue to load and show “Not dated” when applicable. 
+- **CMS:** Fixed the main navigation menu so menu items no longer shift when users hover over them. 
+- **CMS:** Hid the feedback and glossary buttons from printed financial summary pages.
+- **CMS and API:** Added a 500 character limit for legal search keyword fields and shows a clear message when a search is too long.
+
+
+## Under the hood
+- **API:** Add `derived_committee_type` to endpoint: /efile/test-form1/
+- **API:** Added database support for derived committee type in test e-file Form 1 data.
+- **API:** Updated Flyway related package settings. 
+- **API:** Updated e-file committee type handling.
+
 # August 18, 2026 (Sprint 32.5)
 ## Added
 - **CMS and API:** Added a 500 character limit to legal keyword searches and a clear message when search terms are too long. This applies to legal search inputs only. 
